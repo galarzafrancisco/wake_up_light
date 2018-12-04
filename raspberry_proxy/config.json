@@ -1,0 +1,10 @@
+{
+    "env": "dev",
+    "dev": {
+        "port": 3333,
+        "wake_up_api_url": "insert your google apps script url here"
+    },
+    "prod": {
+        "port": 80
+    }
+}
