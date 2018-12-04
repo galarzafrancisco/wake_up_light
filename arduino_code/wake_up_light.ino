@@ -9,13 +9,12 @@
 #define NUM_LEDS    60
 
 CRGB leds[NUM_LEDS];
-// green - red - blue
 
 // WiFi parameters
 const char* ssid     = "imnotgonnatellyou";
 const char* password = "seriously";
 
-// API parameters
+// API parameters (this is the proxy running on the Raspberry Pi)
 const char* api_host = "10.0.0.99";
 const char* api_url = "/api/wake_up_light";
 const int httpPort = 3333;
