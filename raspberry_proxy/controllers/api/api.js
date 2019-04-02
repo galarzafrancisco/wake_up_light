@@ -20,7 +20,7 @@ apiRoutes.get('/wake_up_light', (req, main_response) => {
     axios.get(url)
         .then((sub_request_response) => {
             const data = sub_request_response.data
-            console.log(`${Date.now()}: ${data}`)
+            console.log(`${new Date()}: ${data}`)
             main_response.status(200).send(sub_request_response.data.toString())
         })
         .catch((error) => {
